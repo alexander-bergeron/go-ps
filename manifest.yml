@@ -1,0 +1,14 @@
+python_filewatcher:
+  restart: true
+  owner: apb
+  hostname: apbs-MBP.apb.homelab.com
+  port: null
+  command:
+    - /opt/homebrew/Caskroom/miniconda/base/bin/python
+    - /Users/apb/workspaces/temp/go-ps/test/sleep.py
+  environment:
+    TEST_VAR: test
+  flags: null
+  healthcheck: null
+  # healthcheck: >
+  #   curl ...
